@@ -48,5 +48,7 @@ function solution(id_list, report, k) {
             }
         }
     }
-    return answer;
+    console.log(answer);
 }
+solution();
+
