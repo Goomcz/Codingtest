@@ -41,5 +41,53 @@ console.log(fruits);
 fruits.splice(1,1);
 console.log(fruits);
 
+// [1] 부터 시작해서 아무것도 삭제하지 않고, 새로운 ele 추가
 fruits.splice(1,0,'grape');
 console.log(fruits);
+
+// 잘라진 새로운 배열을 만듬, 배열이 바뀌는 것이 아님에 유의해라
+// [0] 부터 2개의 ele 를 잘라서 새로운 배열로 리턴한다
+
+let newArr=fruits.slice(0,2);
+console.log(fruits);
+console.log(newArr);
+
+// 여러개의 배열을 붙여줌
+const arr1 = [1,2,3];
+const arr2 = [4,5,6];
+const arr3 = arr1.concat(arr2);
+console.log(arr1);
+console.log(arr2);
+console.log(arr3);
+
+// 순서를 거꾸로
+const arr4 = arr3.reverse();
+console.log(arr4);
+console.clear();
+
+// 중첩 배열을 하나의 배열로 펼치기
+let arr= [[1,2,3],[4,5,6]];
+console.log(arr);
+console.log(arr.flat());
+
+let arrange= [[1,2,3],[4,5],6];
+console.log(arrange);
+console.log(arrange.flat(2));
+
+
+// 특정한 값으로 배열을 채우기(배열 자체를 수정)
+let arrange2= [1,2,3,4,5,6];
+arrange2.fill(0,1,2);
+console.log(arrange2);
+arrange2.fill(0,1,3);
+console.log(arrange2);
+arrange2.fill('s', 0);
+console.log(arrange2);
+
+//배열을 문자열로 합하기
+
+let text = arrange2.join();
+console.log(text);
+
+let text2 = arrange2.join(' | ');
+console.log(text2);
