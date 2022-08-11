@@ -1,6 +1,3 @@
-const lottos=[1,2,3,4,5,6];
-const win_nums=[2,5,10,11,9,34];
-
 function solution(lottos, win_nums) {
     
 
